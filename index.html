@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Port<span>folio</span></div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h2>Heya Everyone,</h2>
+                <h1>I am Ayush <span>Jain</span></h1>
+                <p>And I'm a Front-end Web Developer</p>
+            </div>
+            <div class="social-media">
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <a href="#" class="btn" >Download Resume</a>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/personal pic.jpg" height="90%">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Education')">Qualification</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Work Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Education">
+                        <ul>
+                            <li><span>Maharaja Agrasen Institute Of Technology</span><br>Bachelor's of technology(2021-2025)</li>
+                            <li><span>Siddhartha Public School</span><br>12th(2020-2021) - 89%</li>
+                            <li><span>Model School</span><br>10th(2018-2019) - 97%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>CodSoft</span><br>Web Development Intern<br>(Aug-Sept)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My <span>Skills</span></h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Front-end Web Development</h2>
+                    <p>I specialize in crafting engaging and responsive user interfaces using HTML, CSS, and JavaScript. Whether it's building interactive websites or optimizing user experiences, I'm dedicated to creating web solutions that captivate and perform.</p>
+                    <a href="#" class="lm">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Data Structures & Algorithms</h2>
+                    <p>My passion for problem-solving drives my proficiency in data structures and algorithms. I enjoy tackling complex challenges and optimizing code efficiency to deliver elegant and scalable solutions.</p>
+                    <a href="#" class="lm">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Basic SQL</h2>
+                    <p>I have a foundational understanding of SQL, focusing on essential concepts like querying data, creating tables, and basic database management. I'm eager to expand my skills further in this area.</p>
+                    <a href="#" class="lm">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My <span>Projects</span></h1>
+            <div class="pro-list">
+                <div class="pro">
+                    <img src="images/calculator.jpg">
+                    <div class="layer">
+                        <h3>Basic Calculator</h3>
+                        <p>This calculator is designed to handle fundamental arithmetic operations, including addition, subtraction, multiplication, division, and percentage calculations.</p>
+                        <a href="https://ayush260603.github.io/codsoft_3/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="pro">
+                    <img src="images/weather.jpg" height="290px">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>It is a HTML,CSS ,Javascript weather app that is able to tell current weather situation of any part of the world. It fetches the data from openweathermaps API.</p>
+                        <a href="https://ayush260603.github.io/weather-app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+                <div class="pro">
+                    <img src="images/resume app.jpg" height="290">
+                    <div class="layer">
+                        <h3>Resume Generator App</h3>
+                        <p>Developed a user-friendly web application that dynamicallygenerates professional-quality resumes based on user input form.
+                            Utilized modern JavaScript techniques for efficient datahandling and rendering, enabling quick and seamlessinteractions.
+                        </p>
+                        <a href=" https://ayush260603.github.io/Resume-Builder-App/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Made By Ayush Jain</p>
+    </footer>
+    <script src="index.js"></script>
+    <br>
+</body>
+</html>
